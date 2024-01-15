@@ -7,7 +7,10 @@ try:
     order = menu[user_input]
 
 except:
-    print('잘못된 주문입니다.')
+    print('메뉴에 없는 번호입니다.')
+
+except:
+    print("번호로 입력해주세요.")
 
 else:
    print(f"{order}주스를 주문하였습니다.")
