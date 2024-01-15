@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간단한 웹 계산기</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+
+      .calculator {
+        width: 50vw;
+        height: 50vh;
+        margin: 100px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="text"] {
+        width: 100%;
+        height: 10%;
+        margin-bottom: 3vh;
+        box-sizing: border-box;
+      }
+
+      input[type="button"] {
+        width: 20%;
+        height: 8vh;
+        margin: 0.5vw;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        font-size: 40px;
+      }
+
+      input[type="button"]:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="one">
+        <input type="button" value="1" onclick="appendValue('1')" />
+        <input type="button" value="2" onclick="appendValue('2')" />
+        <input type="button" value="3" onclick="appendValue('3')" />
+        <input type="button" value="+" onclick="appendValue('+')" />
+      </div>
+      <div calss="two">
+        <input type="button" value="4" onclick="appendValue('4')" />
+        <input type="button" value="5" onclick="appendValue('5')" />
+        <input type="button" value="6" onclick="appendValue('6')" />
+        <input type="button" value="-" onclick="appendValue('-')" />
+      </div>
+      <div class="three">
+        <input type="button" value="7" onclick="appendValue('7')" />
+        <input type="button" value="8" onclick="appendValue('8')" />
+        <input type="button" value="9" onclick="appendValue('9')" />
+        <input type="button" value="/" onclick="appendValue('/')" />
+      </div>
+      <div class ='four'>
+      <input type="button" value="0" onclick="appendValue('0')" />
+      <input type="button" value="." onclick="appendValue('.')" />
+      <input type="button" value="=" onclick="calculate()" />
+      <input type="button" value="C" onclick="clearDisplay()" />
+    </div>
+  </body>
+</html>
