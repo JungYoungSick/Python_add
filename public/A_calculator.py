@@ -1,50 +1,4 @@
-# # 예외 처리
-# menu = ["사과","바나나","오렌지"]
-
-
-# try:
-#     user_input = int(input("0:사과, 1:바나나, 2:오렌지 >> "))
-#     order = menu[user_input]
-
-# except:
-#     print('메뉴에 없는 번호입니다.')
-
-
-# else:
-#    print(f"{order}주스를 주문하였습니다.")
-
-# finally:
-#     print("이용해 주셔서 감사합니다.")
-# import tkinter import *
-# window=Tk()
-# window.title("계산기")
-# Window.resizeable(False False)
-# window.config(padx=10, pady=10, bg=IVORY)
-
-
-# digits=[
-#     ['7','8','9','*'],
-#     ['4','5','6','**'],
-#     ['1','2','3','/'],
-#     ['.','0','+','-']
-# ]
-
-# input_entry = Entry(window, width=30, font=("나눔바른펜",20), bg=IVORY)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import sys
 
 # 콜백함수를 통한 덧셈
 def plus(x, y):
@@ -71,6 +25,7 @@ def pusent(x, y):
       return "계산 할 수 없습니다."
 
 # 숫자와 input 숫자 입력
+
 OneNum = float(input("첫 번째 숫자를 입력하세요: "))
 operator = input("연산자를 입력하세요 (+, -, *, /, **, %): ")
 TwoNum = float(input("두 번째 숫자를 입력하세요: "))
@@ -93,3 +48,7 @@ else:
 
 # 결과 출력
 print(f"계산 결과: {result}")
+
+continue_input = input("계산을 종료하시겠습니까? (y/n): ")
+if continue_input.lower() != 'y':
+    sys.exit()
