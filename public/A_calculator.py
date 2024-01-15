@@ -1,3 +1,38 @@
+# 예외 처리
+menu = ["사과","바나나","오렌지"]
+
+
+try:
+    user_input = int(input("0:사과, 1:바나나, 2:오렌지 >> "))
+    order = menu[user_input]
+
+except:
+    print('잘못된 주문입니다.')
+
+else:
+   print(f"{order}주스를 주문하였습니다.")
+
+finally:
+    print("이용해 주셔서 감사합니다.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 콜백함수를 통한 덧셈
 def plus(x, y):
     return x + y
