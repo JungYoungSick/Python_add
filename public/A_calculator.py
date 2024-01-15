@@ -1,25 +1,35 @@
-# 예외 처리
-menu = ["사과","바나나","오렌지"]
+# # 예외 처리
+# menu = ["사과","바나나","오렌지"]
 
 
-try:
-    user_input = int(input("0:사과, 1:바나나, 2:오렌지 >> "))
-    order = menu[user_input]
+# try:
+#     user_input = int(input("0:사과, 1:바나나, 2:오렌지 >> "))
+#     order = menu[user_input]
 
-except:
-    print('메뉴에 없는 번호입니다.')
-
-except:
-    print("번호로 입력해주세요.")
-
-else:
-   print(f"{order}주스를 주문하였습니다.")
-
-finally:
-    print("이용해 주셔서 감사합니다.")
+# except:
+#     print('메뉴에 없는 번호입니다.')
 
 
+# else:
+#    print(f"{order}주스를 주문하였습니다.")
 
+# finally:
+#     print("이용해 주셔서 감사합니다.")
+# import tkinter import *
+# window=Tk()
+# window.title("계산기")
+# Window.resizeable(False False)
+# window.config(padx=10, pady=10, bg=IVORY)
+
+
+# digits=[
+#     ['7','8','9','*'],
+#     ['4','5','6','**'],
+#     ['1','2','3','/'],
+#     ['.','0','+','-']
+# ]
+
+# input_entry = Entry(window, width=30, font=("나눔바른펜",20), bg=IVORY)
 
 
 
